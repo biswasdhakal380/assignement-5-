@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a,b,c,d,f;
+clrscr();
+printf("enter the values of a,b,c,d as:\n");
+printf("|a  b|\n");
+printf("|c  d|\n");
+printf("value of element in position of (a): ");
+scanf("%d",&a);
+printf("\nvalue of element in position of (b): ");
+scanf("%d",&b);
+printf("\nvalue of element in position of (c): ");
+scanf("%d",&c);
+printf("\nvalue of element in position of (d): ");
+scanf("%d",&d);
+printf(" the given matrix is :\n");
+printf("|%d  %d|\n",a,b);
+printf("|%d  %d|\n",c,d);
+b=-b;
+c=-c;
+f=d;
+d=a;
+a=f;
+printf("the transpose of above matrix is:\n");
+printf("|%d  %d|\n",a,b);
+printf("|%d  %d|\n",c,d);
+getch();
+}
